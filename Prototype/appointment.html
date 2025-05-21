@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment | Stoneric Building Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="manifest" href="Images/android-chrome-512x512.png">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/Images/finishing___services-removebg-preview.png" alt="Stoneric Building Finishing Services Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="main.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="main.html#contacts">Contact</a></li>
+                        <li><a href="appointment.html" class="active">Schedule Appointment</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <h1>Schedule Your Appointment</h1>
+            
+            <div class="appointment-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c4d901df-9f65-4290-82ab-e9b4963b68ce">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Needed*</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="electrical">Interior Design/Installation</option>
+                            <option value="electrical">Exterior Design/Installation</option>
+                            <option value="construction">Building Construction</option>
+                            <option value="renovation">Cell Site Engineering</option>
+                            <option value="renovation">Solar Panel Installation</option>
+                            <option value="renovation">Electrical Installation</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date*</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Preferred Time*</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Book Appointment</button>
+                    
+                </form>
+                
+                <div class="appointment-info">
+                    <h3><i class="fas fa-info-circle"></i> Appointment Info</h3>
+                    <p>We'll contact you within 24 hours to confirm your appointment.</p>
+                    <p>For urgent requests, please call: <strong>09478020008</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="/images/finishing___services-removebg-preview.png" alt="Stoneric Logo">
+                <p>Building Excellence, Finishing Perfection Since 2024.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="main.html#contacts">Contact</a></li>
+                    <li><a href="appointment.html">Schedule Appointment</a></li> 
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#build-from-ground">Build from Ground Up</a></li>
+                    <li><a href="services.html#design-installation">Interior and Exterior Design and Installation</a></li>
+                    <li><a href="services.html#electrical-installation">Commercial, Industrial & Residential Electrical Installations</a></li>
+                    <li><a href="services.html#cell-site">Cell Site Engineering Works</a></li>
+                    <li><a href="services.html#solar-installation">Solar Panel Installation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Stoneric Building Finishing Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
